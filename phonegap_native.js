@@ -33,9 +33,9 @@ var destinationType; // sets the format of returned value
 
 //FOR DATABASE CONNECTIVITY
 var db;
-var shortName = 'ArtFixDB';
+var shortName = 'dbName';
 var version = '1.0';
-var displayName = 'ArtFixDB';
+var displayName = 'dbName';
 var maxSize = 65535;
 var check=false;
 var activeInactive=false;
