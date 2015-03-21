@@ -30,19 +30,30 @@ but when You using get-imei javaScript function You have to write some  line in 
 store Your data in webSql using  database connection and query  ,and it will create your datadbase in websql
 but if you dont want to store data in websql then use getSharedPreferences() function.
 	 	  //in javascript
-			var imei=window.YourActivityName.get_imei();
+			var sharedPref = window.YourActivityName.getSharedPreferences();
 
 		//In android
-		//WRITE THIS LINE IN ONCREATE
-		appView.addJavascriptInterface(this, "YourActivityName"); 
- 		//WRITE THIS FUNCTION AFTER ONCREATE
+		//GET and SET SharedPreferences
+	
 		@JavascriptInterface
-		public String get_imei() {
-       		TelephonyManager telephonyManager =(TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
-		  String imei = telephonyManager.getDeviceId();
-		 return imei;    
-		}
-
+	public String getSharedPreferences(){
+	 
+		SharedPreferences prefs = getSharedPreferences("TEST", MODE_PRIVATE); 
+		
+		  String name = prefs.getString("name", "No name defined");//"No name defined" is the default value.
+		  return name;    
+	}
+	
+	@JavascriptInterface
+	public void setSharedPreferences(){
+	 
+		SharedPreferences.Editor editor = getSharedPreferences("TEST", MODE_PRIVATE).edit();
+		 editor.putString("name", "KEVAL");
+		editor.commit();
+		return;
+		
+	}
+	
 You can Capture Images also
 	
 	
