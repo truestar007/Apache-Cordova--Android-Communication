@@ -66,7 +66,7 @@ but if you dont want to store data in websql then use getSharedPreferences() fun
 		
 	}
 	
-You can Capture Images also
+You can Capture Images and check your internet connection 
 	
 	
 
