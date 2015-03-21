@@ -3,12 +3,12 @@ This js is use to communicate with android function even you can store your data
 
 As you can see in Given JS There is one function onLoad(){.....}.
 so tis function is apply in body 
-<html>
-<head>
-inject given js hear 
-<head>
-<body onLoad=''onLoad() ">
-</body>
+//<html>
+/<head>
+//inject given js hear 
+//<head>
+//<body onLoad=''onLoad() ">
+//</body>
 ........................
 
 For IMEI number Use get_imei but in this js it is declared in onDeviceReady so it will give you IMEI number onload
