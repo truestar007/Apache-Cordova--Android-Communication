@@ -6,12 +6,13 @@ so tis function is apply in body
 		
 		
 		
-		//<html>
-		//<head>
-		//inject given js hear 
-		//<head>
-		//<body onLoad=''onLoad() ">
-		//</body>
+		<html>
+		<head>
+			<script>inject given js hear</script> 
+		<head>
+		<body onLoad=''onLoad() ">
+			Your stuff
+		</body>
 		
 		
 
