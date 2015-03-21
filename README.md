@@ -29,6 +29,8 @@ but when You using get-imei javaScript function You have to write some  line in 
 ........................
 store Your data in webSql using  database connection and query  ,and it will create your datadbase in websql
 but if you dont want to store data in websql then use getSharedPreferences() function.
+	 	 
+	 	 
 	 	  //in javascript
 			var sharedPref = window.YourActivityName.getSharedPreferences();
 
