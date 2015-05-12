@@ -156,7 +156,7 @@ function checkConnection() {
 	states[Connection.NONE] = 'No network connection';
 	if (states[networkState] === 'No network connection') {
 		//alert("Network State : " + states[networkState]);
-
+		// this part is not necessary to use in my functionality i want to test if net connection not available then do some task
 		db.transaction(function(transaction) {
 			transaction.executeSql('SELECT * FROM User;', [], function(transaction, result) {
 				if (result != null && result.rows != null) {
@@ -191,7 +191,7 @@ function checkConnection() {
 
 		//AJAX CALL
 		$.ajax({
-			url: 'http://120.63.158.141:8080/ArtFix/services/vendor',
+			url: 'http:/...../vendor',
 			data: {
 				format: 'json'
 			},
